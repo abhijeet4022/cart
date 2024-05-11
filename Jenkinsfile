@@ -5,9 +5,13 @@ pipeline {
 
     stages {
 
-        stage('Compile') {
+        stage('Compile Test') {
             steps {
                 echo 'Compiling The Code.'
+                script {
+                    demo.info 'Starting'
+                    demo.warning 'Nothing to do!'
+                }
             }
         }
 
