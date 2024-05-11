@@ -1,7 +1,7 @@
 @Library('roboshop') _
 
 pipeline {
-    agent any
+    agent { node { label 'workstation' } }
 
     stages {
 
@@ -31,6 +31,5 @@ pipeline {
                 echo 'Code Security'
             }
         }
-
-
     }
+}
