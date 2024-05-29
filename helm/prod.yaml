@@ -1,0 +1,3 @@
+component: cart
+port: 8080
+service_type: ClusterIP
